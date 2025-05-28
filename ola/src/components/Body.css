@@ -11,3 +11,12 @@
 .titulo2{
     border: 1px solid #000;
 }
+
+.cont{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    /* border: 1px solid #000000; */
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+}
