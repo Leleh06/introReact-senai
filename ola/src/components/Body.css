@@ -1,41 +1,47 @@
 .Body{
-    background-color: #639665;
+    background-color: #333;
     min-height: calc(100vh - 70px);
-
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+}
+
+.card{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.car:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.noImage{
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    color: #555;
 }
 
-.titulo2{
-    border: 1px solid #000;
+.card h2,
+.card p {
+    color: #555;
 }
 
-.cont{
-    display: flex;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    /* border: 1px solid #000000; */
-    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
-}
-
-.form{
-    display: flex;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    /* border: 1px solid #000000; */
-    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
-}
-
-
-.calculadera{
-    display: flex;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    /* border: 1px solid #000000; */
-    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+.grid{
+    width: 92.5vw;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
